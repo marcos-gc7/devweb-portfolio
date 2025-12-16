@@ -23,12 +23,12 @@
 
 -->
 
-<body class=" bg-[#101322] max-w-[1200px] m-auto font-poppins ">
+<body class=" bg-[#101322] max-w-[1200px] m-auto font-poppins">
   <header class="flex justify-between items-center bg-transparent border-b border-[#a7a7a7] pt-8 pr-5 pb-8 pl-5">
     <div class="pl-4 pr-4">
       <img class="max-w-24 hover:cursor-pointer" src="src/images/logo.png">
     </div>
-    <nav class="text-white font-normal text-base flex gap-8 justify-between md:">
+    <nav class="text-white font-normal text-base flex gap-8 justify-between max-[900px]:hidden">
       <div>
         <a class="relative pb-3
                   after:content-[''] after:absolute after:h-0.5 after:w-0
@@ -62,17 +62,17 @@
   </header>
 
   <main>
-    <section id="start" class="grid grid-cols-2 gap-8 pt-20 pr-10 pb-20 pl-10">
+    <section id="start" class="grid grid-cols-2 gap-8 pt-20 pr-10 pb-20 pl-10 max-[900px]:grid-cols-1 ">
       <div class="flex flex-col justify-center">
         <h3 class="font-bold text-[#a7a7a7] mb-1">QUEM SOU EU?</h3>
-        <h1 class="text-white font-bold text-5xl leading-16 pr-2.5 mb-4">Olá! Eu sou <span class="text-stroke">Marcos</span>, Desenvolvedor Web</h1>
+        <h1 class="text-white font-bold text-5xl leading-16 pr-2.5 mb-4 ">Olá! Eu sou <span class="text-stroke">Marcos</span>, Desenvolvedor Web</h1>
         <p class="text-[#cccccc] mb-5">Tenho 18 anos, estudo desenvolvimento front-end a <strong>1 ano e meio</strong>, e atualmente estou na busca da minha primeira oportunidade no mercado de programação.</p>
-        <div class="flex gap-3">
+        <div class="flex gap-3 max-[478px]:flex-col">
           <button class="bg-[#3553f9] text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#2040ee]">Baixar CV</button>
           <button class="bg-transparent text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base border-2 border-[#3553f9] rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#3553f9]"><a href="#">Entrar em contato <i class="ri-phone-fill pl-1.5"></i></a></button>
         </div>
       </div>
-      <div class="flex justify-end">
+      <div class="justify-self-end max-[900px]:-order-1 max-[900px]:justify-self-center">
         <div class="h-[400px] w-[300px] bg-[#a7a7a7] rounded-4xl"></div> <!-- Aqui vai a imagem -->
       </div>
     </section>
@@ -80,12 +80,12 @@
    
     <section id="about-me" class="pt-20 pr-10 pb-20 pl-10">
         <h2 class="text-white text-center font-semibold text-4xl mb-4">CONHEÇA SEU FUTURO DEV</h2>
-        <div class="grid grid-cols-2 gap-8 mt-20 relative">
-          <div class="relative flex flex-col items-center justify-center">
+        <div class="grid grid-cols-2 gap-8 mt-20 relative max-[900px]:grid-cols-1 max-[900px]:gap-20">
+          <div class="relative flex items-center justify-center">
             <img class="max-w-[350px]" src="src/images/ufal.png">
             <span class="absolute left-1/2 -translate-x-1/2 w-[300px] h-[400px] bg-[#3553f9] blur-2xl opacity-35 rounded-full -z-10"></span>
           </div>
-          <div class="p-10 max-w-[700px] bg-[#3552f931] rounded-4xl border border-[#3553f9]">
+          <div class="p-10 max-w-[700px] bg-[#3552f931] rounded-4xl border border-[#3553f9] justify-self-center max-[900px]:-order-1">
             <p class=" text-[#e7e7e7] indent-5 mb-5">Há cerca de um ano e meio decidi entrar no mundo do desenvolvimento depois de trabalhar por um período com design. Sempre gostei de criar coisas bem organizadas e visualmente agradáveis, e foi desse interesse que surgiu minha vontade de entrar no mundo do front-end. Atualmente curso Sistemas de Informação na UFAL, seguindo firme na área e complementando meus estudos. Desde então, venho estudando e evoluindo constantemente meus projetos.</p>
             <p class=" text-[#e7e7e7] indent-5">Venho estudando diariamente para aprimorar minhas skills e desenvolvendo projetos que me ajudam a transformar ideia em prática. Gosto de aprender de forma estruturada, estudando um conceito, aplicando em um projeto simples e depois evoluo para versões mais completas. Esse processo contínuo tem fortalecido minha lógica, meu senso de organização e minha forma de construir interfaces funcionais, limpas e agradáveis de usar. Como será visto posteriormente em meus projetos.</p>
           </div>
@@ -94,9 +94,9 @@
 
     <section id="projects" class="pt-20 pr-10 pb-20 pl-10">
         <h2 class="text-white text-center font-semibold text-4xl mb-4">PROJETOS RECENTES</h2> 
-        <div class="grid grid-cols-2  gap-8 mt-20">
+        <div class="grid grid-cols-2  gap-8 mt-20 max-[652px]:grid-cols-1">
 
-          <div class="justify-self-end flex flex-col max-w-[350px] bg-[#212744] p-5 rounded-4xl">
+          <div class="justify-self-end flex flex-col max-w-[350px] bg-[#212744] p-5 rounded-4xl max-[652px]:justify-self-center">
             <div class="flex-1 mb-4">
               <img class="rounded-2xl overflow-hidden" src="src/images/order-summary.jpg">
               <h4 class="text-white font-semibold text-xl mt-5">Resumo de pedido</h4>
@@ -106,7 +106,7 @@
             <a class="inline-block text-white font-semibold transition-all ease-in-out duration-300 hover:text-[#3553f9] hover:cursor-pointer" href="https://marcos-gc7.github.io/order-summary-component-main/" target="_blank">Ver projeto<i class="ml-1 ri-arrow-right-long-line"></i></a>
           </div>
 
-          <div class="justify-self-start flex flex-col max-w-[350px] bg-[#212744] p-5 rounded-4xl">
+          <div class="justify-self-start flex flex-col max-w-[350px] bg-[#212744] p-5 rounded-4xl max-[652px]:justify-self-center">
             <div class="flex-1 mb-4">
               <img class="rounded-2xl overflow-hidden" src="src/images/form.jpg">
               <h4 class="text-white font-semibold text-xl mt-5">Formulário de Contato</h4>
@@ -123,22 +123,22 @@
     <!-- <div class="transform rounded-lg bg-[#272730] p-6 transition-all hover:-translate-y-1 hover:shadow-lg"></div> -->
 
     <section id="skills" class="flex flex-col items-center pt-20 pr-10 pb-20 pl-10">
-      <h2 class="text-white font-semibold text-4xl mb-20">TECNOLOGIAS QUE USO</h2>
-      <p class="text-[#cccccc] text-center ml-24 mr-24">Essas são as tecnologias que eu faço uso no dia a dia para dar vida aos meus projetos. Elas me acompanham em cada etapa do desenvolvimento, me ajudando a ideias em experiências reais e bem estruturadas.</p>
+      <h2 class="text-white text-center font-semibold text-4xl mb-20">TECNOLOGIAS QUE USO</h2>
+      <p class="text-[#cccccc] text-center ml-24 mr-24 max-[890px]:ml-12 max-[800px]:mr-12">Essas são as tecnologias que eu faço uso no dia a dia para dar vida aos meus projetos. Elas me acompanham em cada etapa do desenvolvimento, me ajudando a ideias em experiências reais e bem estruturadas.</p>
       
-      <div class="w-fit grid grid-cols-3 grid-rows-2 gap-8 mt-10">
-        <div class=" w-60 h-60 p-8 rounded-4xl bg-[#4b2517] border border-[#ff4b00] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]"><img src="src/images/html.png"></div>
-        <div class="w-60 h-60 p-8 rounded-4xl bg-[#171f4b] border border-[#2040ee] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]"><img src="src/images/css.png"></div>
-        <div class="w-60 h-60 p-8 rounded-4xl bg-[#4a4b17] border border-[#ffd93e] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]"><img src="src/images/js.png"></div>
-        <div class="w-60 h-60 p-8 rounded-4xl bg-[#17324b] border border-[#204dee] flex items-center transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]"><img src="src/images/tailwindcss.png"></div>
-        <div class="w-60 h-60 p-8 rounded-4xl bg-[#4b1717] border border-[#ff4b00] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]"><img src="src/images/git.png"></div>
-        <div class="w-60 h-60 p-8 rounded-4xl bg-[#cccccc] border border-[#ffffff] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]"><img src="src/images/github.png"></div>
+      <div class="w-fit grid grid-cols-3 grid-rows-2 gap-8 mt-10 max-[600px]:grid-cols-2 max-[600px]:grid-rows-3">
+        <div class="max-w-60 max-h-60 p-8 rounded-4xl bg-[#4b2517] border border-[#ff4b00] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)] max-[600px]:max-w-44 max-[600px]:max-h-44"><img src="src/images/html.png"></div>
+        <div class="max-w-60 max-h-60 p-8 rounded-4xl bg-[#171f4b] border border-[#2040ee] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)] max-[600px]:max-w-44 max-[600px]:max-h-44"><img src="src/images/css.png"></div> 
+        <div class="max-w-60 max-h-60 p-8 rounded-4xl bg-[#4a4b17] border border-[#ffd93e] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)] max-[600px]:max-w-44 max-[600px]:max-h-44"><img src="src/images/js.png"></div>
+        <div class="max-w-60 max-h-60 p-8 rounded-4xl bg-[#17324b] border border-[#204dee] flex items-center transition-all ease-in-out duration-300 hover:transform-[scale(1.1)] max-[600px]:max-w-44 max-[600px]:max-h-44"><img src="src/images/tailwindcss.png"></div>
+        <div class="max-w-60 max-h-60 p-8 rounded-4xl bg-[#4b1717] border border-[#ff4b00] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)] max-[600px]:max-w-44 max-[600px]:max-h-44"><img src="src/images/git.png"></div>
+        <div class="max-w-60 max-h-60 p-8 rounded-4xl bg-[#cccccc] border border-[#ffffff] transition-all ease-in-out duration-300 hover:transform-[scale(1.1)] max-[600px]:max-w-44 max-[600px]:max-h-44"><img src="src/images/github.png"></div>
       </div>
     </section>
 
     <section id="contact" class="pt-20 pr-10 pb-20 pl-10">
       <h2 class="text-white text-center font-semibold text-4xl mb-20">CONTATOS</h2>
-      <div class="grid grid-cols-4 gap-8 w-fit m-auto">
+      <div class="grid grid-cols-4 gap-8 w-fit m-auto max-[800px]:grid-cols-2  max-[430px]:grid-cols-1">
         <a href="https://www.linkedin.com/in/marcos-castro7/" target="_blank">
           <div class="flex flex-col items-center transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]">
             <div class="flex justify-center items-center w-16 h-16 mb-4 rounded-full bg-[#171f4b]"><i class="text-4xl text-[#3553f9] ri-linkedin-box-fill"></i></div>
