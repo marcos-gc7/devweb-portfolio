@@ -30,35 +30,35 @@
     </div>
     <nav class="text-white font-normal text-base flex gap-8 justify-between max-[900px]:hidden">
       <div>
-        <a class="relative pb-3
+        <a id="link1" class="relative pb-3
                   after:content-[''] after:absolute after:h-0.5 after:w-0
                   after:bottom-0 after:left-0 after:bg-[#3553f9]
                   after:transition-all after:duration-300 after:ease-in-out
-                  hover:after:w-3/4" href="#">Início</a>
+                  hover:after:w-3/4" href="#start">Início</a>
       </div>
       <div>
-        <a class="relative pb-3
+        <a id="link2"  class="relative pb-3
                   after:content-[''] after:absolute after:h-0.5 after:w-0
                   after:bottom-0 after:left-0 after:bg-[#3553f9]
                   after:transition-all after:duration-300 after:ease-in-out
-                  hover:after:w-3/4" href="#">Sobre mim</a>
+                  hover:after:w-3/4" href="#about-me">Sobre mim</a>
       </div>
       <div>
-        <a class="relative pb-3
+        <a id="link3"  class="relative pb-3
                   after:content-[''] after:absolute after:h-0.5 after:w-0
                   after:bottom-0 after:left-0 after:bg-[#3553f9]
                   after:transition-all after:duration-300 after:ease-in-out
-                  hover:after:w-3/4" href="#">Projetos</a>
+                  hover:after:w-3/4" href="#projects">Projetos</a>
       </div>
       <div>
-        <a class="relative pb-3
+        <a id="link4"  class="relative pb-3
                   after:content-[''] after:absolute after:h-0.5 after:w-0
                   after:bottom-0 after:left-0 after:bg-[#3553f9]
                   after:transition-all after:duration-300 after:ease-in-out
-                  hover:after:w-3/4" href="#">Contatos</a>
+                  hover:after:w-3/4" href="#contact">Contatos</a>
       </div>
     </nav>
-    <button class="bg-[#3553f9] text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#2040ee] shadow-blink animate-pisca transition-smooth">Contrate-me</button>
+    <button id="btn-contact-header" class="bg-[#3553f9] text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#2040ee] shadow-blink animate-pisca transition-smooth">Contrate-me</button>
   </header>
 
   <main>
@@ -68,8 +68,8 @@
         <h1 class="text-white font-bold text-5xl leading-16 pr-2.5 mb-4 ">Olá! Eu sou <span class="text-stroke">Marcos</span>, Desenvolvedor Web</h1>
         <p class="text-[#cccccc] mb-5">Tenho 18 anos, estudo desenvolvimento front-end a <strong>1 ano e meio</strong>, e atualmente estou na busca da minha primeira oportunidade no mercado de programação.</p>
         <div class="flex gap-3 max-[478px]:flex-col">
-          <button class="bg-[#3553f9] text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#2040ee]">Baixar CV</button>
-          <button class="bg-transparent text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base border-2 border-[#3553f9] rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#3553f9]"><a href="#">Entrar em contato <i class="ri-phone-fill pl-1.5"></i></a></button>
+          <a href="src/files/Currículo_Marcos_Castro.pdf" download class="bg-[#3553f9] text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#2040ee]">Baixar CV</a>
+          <button id="btn-contact-main" class="bg-transparent text-white pt-4 pr-8 pb-4 pl-8 font-semibold text-base border-2 border-[#3553f9] rounded-4xl hover:cursor-pointer transition-color ease-in-out duration-300 hover:bg-[#3553f9]"><a href="#">Entrar em contato <i class="ri-phone-fill pl-1.5"></i></a></button>
         </div>
       </div>
       <div class="justify-self-end max-[900px]:-order-1 max-[900px]:justify-self-center">
@@ -160,7 +160,7 @@
             <p class="text-[#cccccc]">(82) 99336-0368</p>
           </div>
         </a>
-        <a href="" target="_blank">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marcos.yk07@gmail.com" target="_blank">
           <div class="flex flex-col items-center transition-all ease-in-out duration-300 hover:transform-[scale(1.1)]">
             <div class="flex justify-center items-center w-16 h-16 mb-4 rounded-full bg-[#171f4b]"><i class="text-4xl text-[#3553f9] ri-mail-fill"></i></div>
             <h4 class="text-white font-semibold text-base">Email</h4>
@@ -179,7 +179,9 @@
   </footer> -->
 
   <div class="m-auto p-4 text-white text-sm text-center">
-        Copyright © Marcos Castro. Todos os direitos reservados.
+      Copyright © Marcos Castro. Todos os direitos reservados.
   </div>
+
+  <script src="src/script.js"></script>
 </body>
 </html>
